@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: rgb(0, 30, 183);
+    background-color: rgb(0, 31, 183);
     color: white;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,7 +13,9 @@ header{
 
 body{
     height: 100vh;
-    background: linear-gradient(to bottom, #2356ff, #464646);
+    background-image: url(fut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .texto{
     align-items: center;
@@ -56,13 +58,19 @@ main{
 .card:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    background: linear-gradient(to bottom, #ffffff61, #6f6f6f);
-    color: white;
+    width: 320px;
 }
 
 
 main{
 
-background-color: rgb(81, 162, 255);
+background-image: linear-gradient(to bottom, rgb(1, 8, 107), rgba(0, 0, 0, 0.089));
 
+
+
+}
+
+.card-2{
+    background-image: url(agv.jpg);
+    
 }
