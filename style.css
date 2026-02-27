@@ -6,14 +6,14 @@
 
 header{
     background-color: rgb(0, 31, 183);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     height: 100vh;
-    background-image: url(fut.jpg);
+    background-image: url(futsal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,6 +26,7 @@ body{
 #cards{
     
     display: flex;
+
 
 }
 
@@ -40,8 +41,9 @@ main a{
     height: 500px;
     margin: 30px;
     border-radius: 10px;
-    background-color: white;
     transition: 0.5s;
+    background-color: white;
+
 }
 
 
@@ -65,21 +67,46 @@ main{
     transform: scale(1.05);
     transition: 0.5s;
     width: 320px;
+    box-shadow: 1px 10px 20px 10px rgba(0, 0, 0, 0.459);
 }
 
 
 main{
 
-background-image: linear-gradient(to bottom, rgb(1, 8, 107), rgba(0, 0, 0, 0.089));
+background-image: linear-gradient(to bottom, rgb(0, 5, 77), rgba(0, 0, 0, 0));
+position: relative;
 
 
 
 }
 
+
+main div{
+    position: relative;
+    top: 50px;
+    
+}
+
 .card-2{
-    background-image: url(agv.jpg);
+    background-image: url(agv.png);
     background-size: cover;
     background-position: center;
     position: relative;
     
 }
+
+
+.card-3{
+    background-image: url(code.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.card:active{
+    transform: scale(0.95);
+    transition-duration: .5s;
+}
+
+
