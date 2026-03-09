@@ -42,9 +42,45 @@ main a{
     margin: 30px;
     border-radius: 10px;
     transition: 0.5s;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 1;
+    
 
 }
+
+
+.card:hover{
+    transform: scale(1.05);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+
+.card:hover::before{
+    animation: deslocar 0.8s forwards;
+}
+
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    background-color: rgba(47, 47, 255, 0.76);
+
+    
+}
+
+.card img:hover{
+
+    transition-duration: .5s;
+}
+
 
 
 .card p{
@@ -63,17 +99,11 @@ main{
     justify-content: center;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-    width: 320px;
-    box-shadow: 1px 10px 20px 10px rgba(0, 0, 0, 0.459);
-}
-
 
 main{
 
-background-image: linear-gradient(to bottom, rgb(0, 5, 77), rgba(0, 0, 0, 0));
+background-image: linear-gradient(to bottom, rgb(0, 5, 77),rgba(0, 5, 77, 0.795), rgba(61, 61, 255, 0.753)
+, rgba(0, 0, 0, 0));
 position: relative;
 
 
@@ -88,12 +118,34 @@ main div{
 }
 
 .card-2{
-    background-image: url(agv.png);
+    background-image: url(sla.png);
     background-size: cover;
     background-position: center;
     position: relative;
     
 }
+
+
+
+
+
+
+
+@keyframes deslocar {
+
+    0%{
+         top: 110%;
+
+    }
+
+    100%{
+        top: 0;
+    }
+    
+}
+
+
+
 
 
 .card-3{

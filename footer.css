@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* ícones dentro do footer (se existirem) */
+footer .gitub a,
+footer .insta a {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* exemplo de uso:
+footer .gitub { background-image: url(github.png); }
+footer .insta { background-image: url(insta.png); }
+*/
